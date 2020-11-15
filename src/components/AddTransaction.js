@@ -30,11 +30,11 @@ export function AddTransaction() {
                 <div className="transaction">
                     <div className="inputs">
                         <label htmlFor="description">Description</label> <br />
-                        <input type="text" value={description} id="description" onChange={(e) => setDescription(e.target.value)} placeholder="enter details of your transaction" />
+                        <input type="text" value={description} id="description" onChange={(e) => setDescription(e.target.value)} required="required" placeholder="enter details of your transaction" />
                     </div>
                     <div className="inputs">
                         <label htmlFor="amount">Transaction Amount</label> <br />
-                        <input type="number" value={amount} id="amount" onChange={(e) => setAmount(e.target.value)} placeholder="enter value of transaction" />
+                        <input type="number" value={amount} id="amount" onChange={(e) => setAmount(e.target.value)} required="required" placeholder="enter value of transaction" />
                         <small><p>(Add <b>'+'</b> for income and <b>'-'</b> for expense before amount)</p></small>
                     </div>
                     <br />
