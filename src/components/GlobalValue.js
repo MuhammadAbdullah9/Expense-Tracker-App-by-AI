@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
 
     function addTransaction(transaction){
         dispatch({
-            type: 'AddTransaction',
+            type: 'addTransaction',
             payload: transaction
         })
     }
